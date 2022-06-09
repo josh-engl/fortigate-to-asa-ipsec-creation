@@ -18,7 +18,7 @@ def create_phase2_selectors(user_input):
             print(f"edit {dst_name}")
         print(f"set phase1name {user_input.get('phase1name')}")
         print(f"set proposal {user_input.get('proposal')}")
-        if user_input.get("pfs") == "y" or "yes":
+        if user_input.get("pfs") == "y" or user_input.get("pfs") == "yes":
             print(f"set pfs enable")
             print(f"set dhgrp {user_input.get('dhgrp')}")
         else:
